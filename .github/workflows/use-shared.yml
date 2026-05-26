@@ -8,3 +8,6 @@ on:
 jobs:
   call-shared:
     uses: stefanpenner/shared-workflow-test/.github/workflows/shared.yml@main
+
+  call-no-token:
+    uses: stefanpenner/shared-workflow-test/.github/workflows/test-no-token.yml@main
