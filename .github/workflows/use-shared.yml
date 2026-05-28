@@ -1,4 +1,4 @@
-name: Use Shared Workflow
+name: CI
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  call-shared:
+  ci:
     uses: stefanpenner-cs/reusable-workflows/.github/workflows/shared.yaml@main
     with:
       ref: main
