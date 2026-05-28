@@ -7,7 +7,6 @@ on:
 
 jobs:
   call-shared:
-    uses: stefanpenner-cs/reusable-workflows/.github/workflows/shared.yml@main
-
-  call-no-token:
-    uses: stefanpenner-cs/reusable-workflows/.github/workflows/test-no-token.yml@main
+    uses: stefanpenner-cs/reusable-workflows/.github/workflows/shared.yaml@main
+    with:
+      ref: main
